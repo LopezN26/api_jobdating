@@ -1,0 +1,12 @@
+version: "3.7"
+
+services: 
+    ourmongo :
+        build : .
+        image : ourmongo:latest
+        ports :
+            - "27017:27017"
+        volumes :
+            - ./src/data:/home/app/data
+        
+        
